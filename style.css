@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'UnifrakturCook', cursive;
+  background: #0d0d0d; /* почти черный */
+  color: #e6e6e6;       /* серебристо-серый */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(200, 0, 200, 0.2);
+  max-width: 500px;
+  width: 90%;
+  border: 1px solid #333;
+  animation: breathing-darkness 6s ease-in-out infinite;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #666;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #bb86fc;
+  animation: glow 5s ease-in-out infinite;
+}
+
+.tagline {
+  font-style: italic;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 10px 8px;
+  padding: 10px 20px;
+  background: #290a37;
+  color: #f5f5f5;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+}
+
+.buttons a:hover {
+  background: #52025a;
+  color: #fff;
+  border-color: #777;
+}
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #bb86fc, 0 0 10px #bb86fc, 0 0 15px #52025a;
+    color: #bb86fc;
+  }
+  50% {
+    text-shadow: 0 0 15px #bb86fc, 0 0 30px #bb86fc, 0 0 45px #52025a;
+    color: #d6aaff;
+  }
+  100% {
+    text-shadow: 0 0 5px #bb86fc, 0 0 10px #bb86fc, 0 0 15px #52025a;
+    color: #bb86fc;
+  }
+}
+
+@keyframes breathing-darkness {
+  0% {
+    background-color: #1a1a1a;
+    box-shadow: 0 0 20px rgba(200, 0, 200, 0.1);
+  }
+  50% {
+    background-color: #1c101c;
+    box-shadow: 0 0 40px rgba(200, 0, 200, 0.2);
+  }
+  100% {
+    background-color: #1a1a1a;
+    box-shadow: 0 0 20px rgba(200, 0, 200, 0.1);
+  }
+}
