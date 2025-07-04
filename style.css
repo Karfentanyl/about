@@ -91,3 +91,40 @@ h1 {
     box-shadow: 0 0 20px rgba(200, 0, 200, 0.1);
   }
 }
+.card {
+  width: 90%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.buttons a {
+  flex: 1 1 100%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .card {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+}
